@@ -13,6 +13,9 @@ for (const template of catalog) {
   if (![template.title, template.category, template.description].every(value => typeof value === 'string' && value.trim())) {
     throw new Error(`Missing metadata for ${template.id}`)
   }
+  if (template.previewHeight !== undefined && (!Number.isInteger(template.previewHeight) || template.previewHeight < 420 || template.previewHeight > 760)) {
+    throw new Error(`Invalid preview height for ${template.id}`)
+  }
   ids.add(template.id)
 
   const html = await readFile(new URL(`../templates/${template.id}/index.html`, import.meta.url), 'utf8')

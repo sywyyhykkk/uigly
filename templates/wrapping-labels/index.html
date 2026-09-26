@@ -7,10 +7,15 @@
   <style>
     * { box-sizing: border-box; }
     body { margin: 0; padding: 16px; background: #f5f5f5; color: #222; font: 16px Arial, sans-serif; }
-    main { width: min(100%, 480px); margin: 0 auto; padding: 18px; border: 1px solid #ccc; background: #fff; }
-    h1 { margin: 0 0 8px; font-size: 22px; }
+    main { width: min(100%, 850px); margin: 0 auto; }
+    section { padding: 18px; border: 1px solid #ccc; background: #fff; }
+    .stacked { width: min(100%, 480px); margin: 0 auto 20px; }
+    h1, h2 { margin: 0 0 8px; font-size: 22px; }
     p { margin: 0 0 16px; color: #666; font-size: 14px; }
     .row { display: grid; grid-template-columns: 112px minmax(0, 1fr); align-items: center; gap: 12px; margin-bottom: 8px; }
+    .inline { overflow-x: auto; }
+    .inline-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; min-width: 760px; }
+    .inline-item { display: grid; grid-template-columns: 80px minmax(0, 1fr); align-items: center; gap: 8px; }
     label { line-height: 1.5; }
     input { width: 100%; height: 38px; padding: 8px; border: 1px solid #aaa; border-radius: 2px; font: inherit; }
     button { margin-left: 124px; padding: 9px 20px; border: 1px solid #888; background: #eee; font: inherit; }
@@ -18,29 +23,50 @@
 </head>
 <body>
   <main>
-    <h1>填写资料</h1>
-    <p>请确认以下信息。</p>
-    <div class="row">
-      <label for="name">姓名</label>
-      <input id="name" name="name" type="text">
-    </div>
-    <div class="row">
-      <label for="document-number">身份证件号码</label>
-      <input id="document-number" name="document-number" type="text">
-    </div>
-    <div class="row">
-      <label for="city">所在城市</label>
-      <input id="city" name="city" type="text">
-    </div>
-    <div class="row">
-      <label for="emergency-phone">紧急联系人电话号码</label>
-      <input id="emergency-phone" name="emergency-phone" type="tel">
-    </div>
-    <div class="row">
-      <label for="address">经常使用的收件地址</label>
-      <input id="address" name="address" type="text">
-    </div>
-    <button type="button">保存</button>
+    <section class="stacked">
+      <h1>填写资料</h1>
+      <p>请确认以下信息。</p>
+      <div class="row">
+        <label for="name">姓名</label>
+        <input id="name" name="name" type="text">
+      </div>
+      <div class="row">
+        <label for="document-number">身份证件号码</label>
+        <input id="document-number" name="document-number" type="text">
+      </div>
+      <div class="row">
+        <label for="city">所在城市</label>
+        <input id="city" name="city" type="text">
+      </div>
+      <div class="row">
+        <label for="emergency-phone">紧急联系人电话号码</label>
+        <input id="emergency-phone" name="emergency-phone" type="tel">
+      </div>
+      <div class="row">
+        <label for="address">经常使用的收件地址</label>
+        <input id="address" name="address" type="text">
+      </div>
+      <button type="button">保存</button>
+    </section>
+
+    <section class="inline">
+      <h2>寄送信息</h2>
+      <p>请填写以下联系方式。</p>
+      <div class="inline-row">
+        <div class="inline-item">
+          <label for="recipient">收件人</label>
+          <input id="recipient" name="recipient" type="text">
+        </div>
+        <div class="inline-item">
+          <label for="phone">联系电话</label>
+          <input id="phone" name="phone" type="tel">
+        </div>
+        <div class="inline-item">
+          <label for="backup-phone">紧急联系人电话</label>
+          <input id="backup-phone" name="backup-phone" type="tel">
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>

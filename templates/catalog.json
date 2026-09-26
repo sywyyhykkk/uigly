@@ -9,6 +9,7 @@
     "id": "wrapping-labels",
     "title": "换行的表单标签",
     "category": "表单布局",
-    "description": "固定宽度的标签列放不下长文案，标签换成两行，输入框却仍只有一行高。"
+    "description": "固定宽度的标签列放不下长文案：纵向表单中多个标签换行，或同一排字段中只有一个标签换行。",
+    "previewHeight": 640
   }
 ]
