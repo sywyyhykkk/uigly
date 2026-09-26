@@ -1,0 +1,19 @@
+name: Refresh M4N9O gallery
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger M4N9O production rebuild
+        env:
+          DEPLOY_HOOK: ${{ secrets.M4N9O_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$DEPLOY_HOOK" ]; then
+            echo '::error::M4N9O_DEPLOY_HOOK is not configured'
+            exit 1
+          fi
+          curl --fail --silent --show-error --request POST "$DEPLOY_HOOK"
