@@ -10,6 +10,8 @@
 | --- | --- | --- |
 | 错别字登陆表单 | 文案 | [`templates/typo-login/index.html`](templates/typo-login/index.html) |
 | 换行的表单标签 | 表单布局 | [`templates/wrapping-labels/index.html`](templates/wrapping-labels/index.html) |
+| 忽粗忽细的文字层级 | 文字排版 | [`templates/inconsistent-type/index.html`](templates/inconsistent-type/index.html) |
+| 层层套卡片的表单 | 表单布局 | [`templates/nested-card-form/index.html`](templates/nested-card-form/index.html) |
 
 所有模板都展示在 [m4n9o.com/project/uigly](https://m4n9o.com/project/uigly)。模板列表保存在 [`templates/catalog.json`](templates/catalog.json)。
 

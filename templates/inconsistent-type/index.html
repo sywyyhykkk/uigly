@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>忽粗忽细的文字层级 · UIgly</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 28px 16px; background: #f3f3f3; color: #222; font-family: Arial, sans-serif; }
+    main { width: min(100%, 560px); margin: 0 auto; padding: 24px 28px; border: 1px solid #bbb; background: #fff; }
+    h1 { margin: 0 0 18px; font-size: 20px; }
+    article { padding: 16px 0; border-top: 1px solid #ddd; }
+    h2, p { margin: 0; line-height: 1.5; }
+    h2 { margin-bottom: 8px; }
+    article:nth-of-type(1) h2 { font-size: 22px; font-weight: 700; }
+    article:nth-of-type(1) p { font-size: 14px; }
+    article:nth-of-type(2) h2 { font-size: 16px; font-weight: 400; }
+    article:nth-of-type(2) p { font-size: 16px; }
+    article:nth-of-type(3) h2 { font-size: 16px; font-weight: 300; }
+    article:nth-of-type(3) p { font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>订单通知</h1>
+    <article>
+      <h2>付款成功</h2>
+      <p>订单已收到，稍后会为您安排发货。您可以在订单详情中查看当前进度。</p>
+    </article>
+    <article>
+      <h2>包裹已发出</h2>
+      <p>商品已经交给配送员，预计两天内送达。物流信息会持续更新。</p>
+    </article>
+    <article>
+      <h2>签收提醒</h2>
+      <p>包裹已送达，请确认商品和数量。如有问题，请在订单页面联系售后。</p>
+    </article>
+  </main>
+</body>
+</html>

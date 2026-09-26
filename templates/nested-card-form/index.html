@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>层层套卡片的表单 · UIgly</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px 16px; background: #e8edf2; color: #29323a; font: 15px Arial, sans-serif; }
+    form { width: min(100%, 620px); margin: 0 auto; padding: 18px; border: 2px solid #a9b5c2; border-radius: 10px; background: #dce5ee; }
+    h1 { margin: 0 0 14px; font-size: 21px; }
+    section { margin-top: 14px; padding: 14px; border: 1px solid #b6c4d0; border-radius: 8px; background: #f2f6fa; }
+    h2 { margin: 0 0 12px; font-size: 16px; }
+    .item { display: grid; grid-template-columns: 110px minmax(0, 1fr); align-items: center; gap: 10px; margin-top: 9px; padding: 10px; border: 1px solid #c1cbd4; border-radius: 6px; background: #fff; }
+    .item:first-of-type { margin-top: 0; }
+    input { width: 100%; min-width: 0; height: 34px; padding: 7px; border: 1px solid #aebac5; border-radius: 4px; background: #f9fbfc; font: inherit; }
+    button { margin-top: 16px; padding: 9px 22px; border: 1px solid #91a0ae; border-radius: 5px; background: #fff; font: inherit; }
+  </style>
+</head>
+<body>
+  <form>
+    <h1>编辑个人资料</h1>
+    <section>
+      <h2>基本信息</h2>
+      <div class="item">
+        <label for="name">姓名</label>
+        <input id="name" name="name" type="text">
+      </div>
+      <div class="item">
+        <label for="company">公司</label>
+        <input id="company" name="company" type="text">
+      </div>
+    </section>
+    <section>
+      <h2>联系方式</h2>
+      <div class="item">
+        <label for="email">电子邮箱</label>
+        <input id="email" name="email" type="email">
+      </div>
+      <div class="item">
+        <label for="phone">联系电话</label>
+        <input id="phone" name="phone" type="tel">
+      </div>
+    </section>
+    <button type="button">保存资料</button>
+  </form>
+</body>
+</html>

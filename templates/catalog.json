@@ -11,5 +11,18 @@
     "category": "表单布局",
     "description": "固定宽度的标签列放不下长文案：纵向表单中多个标签换行，或同一排字段中只有一个标签换行。",
     "previewHeight": 640
+  },
+  {
+    "id": "inconsistent-type",
+    "title": "忽粗忽细的文字层级",
+    "category": "文字排版",
+    "description": "同级标题有的加大加粗，有的与正文一样大甚至更细；同级正文也混用 14px 和 16px。"
+  },
+  {
+    "id": "nested-card-form",
+    "title": "层层套卡片的表单",
+    "category": "表单布局",
+    "description": "整个表单、每个分区和每个表单项都重复使用背景色与边框。",
+    "previewHeight": 620
   }
 ]

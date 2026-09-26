@@ -10,6 +10,8 @@ A collection of real UI issues encountered in everyday development, from copy an
 | --- | --- | --- |
 | Typo login | Copy | [`templates/typo-login/index.html`](templates/typo-login/index.html) |
 | Wrapping labels | Form layout | [`templates/wrapping-labels/index.html`](templates/wrapping-labels/index.html) |
+| Inconsistent typography | Typography | [`templates/inconsistent-type/index.html`](templates/inconsistent-type/index.html) |
+| Nested card form | Form layout | [`templates/nested-card-form/index.html`](templates/nested-card-form/index.html) |
 
 The gallery is published at [m4n9o.com/project/uigly](https://m4n9o.com/project/uigly). Templates are listed in [`templates/catalog.json`](templates/catalog.json).
 
