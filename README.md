@@ -17,6 +17,6 @@ The gallery is published at [m4n9o.com/project/uigly](https://m4n9o.com/project/
 
 ## Contribute
 
-Fork this repository, add `templates/<slug>/index.html`, add its title and description to `templates/catalog.json`, and open a pull request. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for the format and review criteria.
+Fork this repository, add `templates/<slug>/index.html`, add its title and description to `templates/catalog.json`, update the template tables in both READMEs, and open a pull request. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for the format and review criteria.
 
 The templates are licensed under MIT. Keep them original and self-contained.

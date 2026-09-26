@@ -17,6 +17,6 @@
 
 ## 贡献模板
 
-Fork 本仓库，新增 `templates/<slug>/index.html`，再把标题和描述添加到 `templates/catalog.json`，然后提交 Pull Request。具体格式和审核标准见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+Fork 本仓库，新增 `templates/<slug>/index.html`，把标题和描述添加到 `templates/catalog.json`，并在中英文 README 的模板表格各加一行，然后提交 Pull Request。具体格式和审核标准见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 模板使用 MIT 许可证。请提交原创、可独立运行的内容。
