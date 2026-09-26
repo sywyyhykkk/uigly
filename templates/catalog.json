@@ -4,5 +4,11 @@
     "title": "错别字登陆表单",
     "category": "文案",
     "description": "登陆、帐号等输入法候选词混用，以及把 username 错拆成 userName 的标签。"
+  },
+  {
+    "id": "wrapping-labels",
+    "title": "换行的表单标签",
+    "category": "表单布局",
+    "description": "固定宽度的标签列放不下长文案，标签换成两行，输入框却仍只有一行高。"
   }
 ]
