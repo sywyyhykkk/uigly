@@ -5,4 +5,4 @@
 3. Add one entry to `templates/catalog.json` with the same slug, a short title, category, and description.
 4. Run `node scripts/validate.mjs`, preview the file in a browser, and open a pull request with a screenshot.
 
-Make the appearance or copy intentionally ugly while keeping controls readable and usable. Use original work that you are willing to contribute under the repository's MIT license. A maintainer reviews the source and the visible result before merging.
+Show a plausible mistake from real development while keeping controls readable and usable. Explain the mistake in the pull request. Use original work that you are willing to contribute under the repository's MIT license. A maintainer reviews the source and the visible result before merging.

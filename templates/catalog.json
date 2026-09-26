@@ -3,6 +3,6 @@
     "id": "typo-login",
     "title": "错别字登陆表单",
     "category": "文案",
-    "description": "按钮、提示和输入框标签都带着一点不对劲的文字。"
+    "description": "登陆、帐号等输入法候选词混用，以及把 username 错拆成 userName 的标签。"
   }
 ]

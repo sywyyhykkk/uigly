@@ -8,6 +8,9 @@ jobs:
   redeploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - name: Check templates before redeploying
+        run: node scripts/validate.mjs
       - name: Trigger M4N9O production rebuild
         env:
           DEPLOY_HOOK: ${{ secrets.M4N9O_DEPLOY_HOOK }}

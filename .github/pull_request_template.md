@@ -1,7 +1,7 @@
 ## Template
 
 - Name and category:
-- What makes it intentionally ugly?
+- Which plausible development mistake does it show?
 - Screenshot of the browser preview:
 
 ## Checklist

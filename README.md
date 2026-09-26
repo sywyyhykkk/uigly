@@ -1,6 +1,6 @@
 # UIgly
 
-An intentionally ugly collection of UI templates. Every template is a standalone HTML file with plain CSS, so you can open it directly in a browser and copy its source.
+A collection of UI mistakes found in everyday development, from copy and naming to overlooked details. Every example is a standalone HTML file with plain CSS, so you can open it directly in a browser and copy its source.
 
 ## Templates
 
